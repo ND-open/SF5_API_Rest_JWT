@@ -28,3 +28,13 @@ services:
 
     sensio_framework_extra.view.listener:
         alias: Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener
+
+fos_user:
+    db_driver:      orm
+    firewall_name:  main
+    user_class:     App\Entity\User
+    from_email:
+        address: "contact@nd.com"
+        sender_name: "Nextie"
+    service:
+        mailer: fos_user.mailer.twig_swift
