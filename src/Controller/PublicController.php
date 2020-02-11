@@ -9,7 +9,7 @@ use FOS\RestBundle\Controller\AbstractFOSRestController;
 use FOS\UserBundle\Model\UserManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
-use Symfony\Component\Security\Core\Encoder\BCryptPasswordEncoder;
+use Symfony\Component\Security\Core\Encoder\NativePasswordEncoder;
 use App\Entity\User;
 use App\Form\User\UserType;
 
@@ -32,7 +32,7 @@ class PublicController extends AbstractFOSRestController
             return $this->handleView($this->view(['message' => 'username_not_found'], Response::HTTP_NOT_FOUND));
         }
 
-        if (!(new BCryptPasswordEncoder(4))->isPasswordValid($user->getPassword(), $data['plainPassword'], 4)) {
+        if (!(new NativePasswordEncoder(4))->isPasswordValid($user->getPassword(), $data['plainPassword'], 4)) {
             return $this->handleView($this->view(["message" => 'username_password_not_match'], Response::HTTP_UNAUTHORIZED));
         }
 

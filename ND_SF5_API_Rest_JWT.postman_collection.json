@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "3fa09155-2945-460a-a48d-420c5826b103",
+		"name": "ND_SF5_API_Rest_JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Unicorn",
+			"item": [
+				{
+					"name": "Delete a Unicorn",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/unicorn/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"unicorn",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Unicorns",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE1ODE0MzA3NDcsImV4cCI6MTU4MTQzNDM0Nywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoibmV4dGllcyJ9.EVIfChFf8HXAn7ycw49Ed-Sy90t2XBWQCnu1xupzOrjSJEDx3t67jYsS04eYBFXSB_h2eRxQHb41PslKPXEfDjxHTbCcGCKpYVL0p60z3kQbwOweJKjdrn1r0pvv9g7OPgDqDFR3I-Di6GvWA2PkG5OGWvRXzV5XORAEmLkwp3MZSnGu0q5YQEkoQVkwBI422WILEbt2GkSWWOjabtPA7QljZKSwPdveoFql3h2CteA2TJt9LTZYJ8q3p5NgKbcCViMbc4hWGZNmvJwveXbgdpbvKCH2ZthOKERlTcwYxF2i5oikiEbM9Edzqi9luszOzbpeSOk62wk5wRfqG7SgHk6O9KgOTx1B26A-qNM_zQfkyvKbfJPEAiHeTgbEi0NkUeO9eUyYwFAIjVWyu-nvmdF4rMDqchn9EtAWusTQ2qqrUsw61b05rDMyvptGrrB85OZMX0E1yioHOWYNN34R3XLbpZP0iUUVhxvvPlpkSbIic_AXgYAsSx2jUMuPtMV1sqgV4mbSuBMu4cMFm1puqhTu4AqlsN21H1e5OmrSSMdkFm6TZzDP79fjb1fKRl8r09KVs2MC__MdZx2m5DtIjAU21cV8kmP7Xnv7JZngNxxmLNXLbiL6MbO_F6_-fo4pJKYzINrGfKLFvMxT7-JWP8S2fM0LlZ3-xfGCzeElh_s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/unicorn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"unicorn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Unicorn",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/unicorn/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"unicorn",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a Unicorn",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nextie-test\",\r\n    \"age\": 12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/unicorn",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"unicorn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put a Unicorn",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nextie-test\",\r\n    \"age\": 12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/unicorn/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"unicorn",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Public",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"nextie\",\n\t\"plainPassword\": \"nd\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
